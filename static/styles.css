@@ -1,0 +1,133 @@
+body {
+  margin: 0;
+  font-family: 'Arial', sans-serif;
+  background-color: #f7f7f7;
+  display: flex;
+  height: 100vh;
+  overflow: hidden;
+}
+
+.sidebar {
+  width: 220px;
+  background-color: #1f2937;
+  color: #fff;
+  padding: 20px;
+  box-sizing: border-box;
+  overflow-y: auto;
+}
+
+.sidebar h2 {
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+
+.chat-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.chat-list li {
+  padding: 10px;
+  margin-bottom: 6px;
+  background-color: #374151;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+.chat-list li:hover {
+  background-color: #4b5563;
+}
+
+.main {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+  padding-bottom: 80px;
+  box-sizing: border-box;
+  overflow-y: auto;
+}
+
+.title {
+  text-align: center;
+  font-size: 28px;
+  font-weight: bold;
+  color: #333;
+  margin: 0 0 12px;
+}
+
+.prompt {
+  text-align: center;
+  font-size: 18px;
+  color: #666;
+  margin: 0 0 20px;
+}
+
+.chat-bar {
+  position: fixed;
+  bottom: 0;
+  left: 220px;
+  width: calc(100% - 220px);
+  background-color: #ffffff;
+  box-shadow: 0 -2px 10px rgba(0, 0, 0, 0.08);
+  padding: 12px 16px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.chat-bar input {
+  width: 60%;
+  max-width: 500px;
+  padding: 12px 16px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 999px;
+  outline: none;
+  transition: border 0.2s ease;
+}
+
+.chat-bar input:focus {
+  border-color: #555;
+}
+
+#mic-button {
+  margin-left: 10px;
+  padding: 12px;
+  border: none;
+  background-color: #4b5563;
+  color: white;
+  font-size: 18px;
+  border-radius: 50%;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+#mic-button:hover {
+  background-color: #6b7280;
+}
+
+#input-mode {
+  margin-right: 10px;
+  padding: 10px;
+  font-size: 14px;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+}
+
+.chat-message {
+  background-color: #e5e7eb;
+  padding: 10px 14px;
+  border-radius: 12px;
+  max-width: 70%;
+  margin: 8px auto;
+  font-size: 15px;
+  color: #111;
+}
+
+.chat-message.user {
+  background-color: grey;
+  align-self: flex-end;
+}

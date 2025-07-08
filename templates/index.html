@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>MastersGPT</title>
+  <link rel="stylesheet" href="/static/styles.css" />
+</head>
+<body>
+  <aside class="sidebar">
+    <h2>Chats</h2>
+    <ul class="chat-list">
+      <li>Welcome over</li>
+      <li>Need Further Assistance</li>
+      <li>Looking for help ,right over here!</li>
+    </ul>
+  </aside>
+
+  <div class="main">
+    <header class="title">MastersGPT</header>
+    <main class="content" id="chat-content">
+      <p class="prompt">How can I help you?</p>
+    </main>
+  </div>
+
+  <div class="chat-bar">
+    <select id="input-mode">
+      <option value="text">⌨️ Text</option>
+      <option value="voice">🎤 Voice</option>
+    </select>
+    <input type="text" id="chat-input" placeholder="Type your message..." />
+    <button id="mic-button">🎤</button>
+  </div>
+
+  <script src="/static/script.js"></script>
+</body>
+</html>
